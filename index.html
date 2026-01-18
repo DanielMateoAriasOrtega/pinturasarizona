@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinturas Arizona — Futuro</title>
+    <meta
+      name="description"
+      content="Pinturas Arizona — colores del futuro, acabados profesionales."
+    />
+    <link rel="icon" href="favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="index.html">
+          <div class="logo-glow" aria-hidden="true"></div>
+          <div class="brand-text">
+            <strong>Pinturas Arizona</strong>
+            <span class="tag">Acabados del futuro</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          ></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero futuristic-hero">
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <h1>Color que anticipa mañana</h1>
+            <p class="lead">
+              Pinturas profesionales con tecnología de protección avanzada y
+              acabados lumínicos.
+            </p>
+            <div class="actions">
+              <a href="productos.html" class="btn btn-primary">Ver productos</a>
+              <a href="contacto.html" class="btn btn-ghost">Contáctanos</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg
+              viewBox="0 0 600 400"
+              preserveAspectRatio="xMidYMid meet"
+              class="hero-svg"
+            >
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#4fd1c5" />
+                  <stop offset="1" stop-color="#7c3aed" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="600"
+                height="400"
+                rx="20"
+                fill="url(#g1)"
+                opacity="0.08"
+              />
+              <g opacity="0.9">
+                <circle cx="120" cy="80" r="60" fill="#7c3aed" />
+                <circle cx="460" cy="320" r="90" fill="#4fd1c5" />
+                <rect
+                  x="220"
+                  y="120"
+                  width="160"
+                  height="160"
+                  rx="20"
+                  fill="#ffffff"
+                  opacity="0.06"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="ambient-grid" aria-hidden="true"></div>
+      </section>
+
+      <section class="features container">
+        <div class="feature">
+          <h3>Durabilidad extrema</h3>
+          <p>Formulaciones resistentes a UV, humedad y desgaste urbano.</p>
+        </div>
+        <div class="feature">
+          <h3>Acabados lumínicos</h3>
+          <p>Neón suave y texturas que cambian con la luz.</p>
+        </div>
+        <div class="feature">
+          <h3>Sostenible</h3>
+          <p>Bajas emisiones VOC y empaques reciclables.</p>
+        </div>
+      </section>
+
+      <section class="productos-preview container">
+        <h2>Productos destacados</h2>
+        <div class="product-grid">
+          <a class="card" href="productos.html#interior">
+            <div class="card-art grad-a"></div>
+            <h4>Pintura Interior</h4>
+            <p class="muted">Acabado mate con tecnología anti-manchas.</p>
+          </a>
+          <a class="card" href="productos.html#exterior">
+            <div class="card-art grad-b"></div>
+            <h4>Pintura Exterior</h4>
+            <p class="muted">Protección UV prolongada y repelente al agua.</p>
+          </a>
+          <a class="card" href="productos.html#esmaltes">
+            <div class="card-art grad-c"></div>
+            <h4>Esmaltes & Barnices</h4>
+            <p class="muted">Brillos profundos y secado rápido.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="cta container">
+        <div class="cta-panel">
+          <h3>¿Quieres una muestra personalizada?</h3>
+          <p class="muted">
+            Envíanos tu idea y te enviamos una prueba de color.
+          </p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar muestra</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <small>© 2026 Pinturas Arizona</small>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

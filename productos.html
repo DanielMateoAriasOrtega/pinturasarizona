@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Productos — Pinturas Arizona</title>
+    <meta name="description" content="Catálogo de pinturas y acabados futuristas. Precios de referencia y fichas técnicas." />
+    <link rel="canonical" href="/productos.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Catálogo Pinturas Arizona",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Pintura Interior","url":"/productos.html#interior"},
+          {"@type":"ListItem","position":2,"name":"Pintura Exterior","url":"/productos.html#exterior"},
+          {"@type":"ListItem","position":3,"name":"Esmaltes & Barnices","url":"/productos.html#esmaltes"},
+          {"@type":"ListItem","position":4,"name":"Revestimiento Texturado","url":"/productos.html#revestimiento"}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header small">
+      <div class="container header-grid">
+        <a class="brand" href="index.html">
+          <div class="logo-glow small" aria-hidden="true"></div>
+          <div class="brand-text">
+            <strong>Pinturas Arizona</strong>
+            <span class="tag">Catálogo</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="product-list" aria-labelledby="catalogo-title">
+        <h1 id="catalogo-title">Catálogo de Productos</h1>
+        <p class="lead">Precios de referencia y descripciones. Solicita muestras y fichas técnicas.</p>
+
+        <div class="controls">
+          <label for="filter">Filtrar por familia:</label>
+          <select id="filter" aria-label="Filtrar productos">
+            <option value="all">Todos</option>
+            <option value="interior">Interior</option>
+            <option value="exterior">Exterior</option>
+            <option value="esmalte">Esmaltes</option>
+          </select>
+          <label for="search" class="sr-only">Buscar productos</label>
+          <input id="search" class="search-input" type="search" placeholder="Buscar por nombre o descripción" aria-label="Buscar productos" />
+        </div>
+
+        <!-- Grid visual -->
+        <div class="catalog-grid" id="catalog" aria-hidden="false">
+          <article class="product" data-type="interior" id="interior">
+            <div class="product-art grad-a" aria-hidden="true"></div>
+            <h2>Pintura Interior</h2>
+            <p class="muted">Mate antimancha — 4L • Aplicación profesional</p>
+            <div class="price">$25.00</div>
+          </article>
+
+          <article class="product" data-type="exterior" id="exterior">
+            <div class="product-art grad-b" aria-hidden="true"></div>
+            <h2>Pintura Exterior</h2>
+            <p class="muted">Resistente UV — 4L • Protección prolongada</p>
+            <div class="price">$30.00</div>
+          </article>
+
+          <article class="product" data-type="esmalte" id="esmaltes">
+            <div class="product-art grad-c" aria-hidden="true"></div>
+            <h2>Esmaltes & Barnices</h2>
+            <p class="muted">Alta adherencia — 1L • Secado rápido</p>
+            <div class="price">$18.00</div>
+          </article>
+
+          <article class="product" data-type="exterior" id="revestimiento">
+            <div class="product-art grad-d" aria-hidden="true"></div>
+            <h2>Revestimiento Texturado</h2>
+            <p class="muted">Acabado arquitectónico — 10L • Textura fina</p>
+            <div class="price">$65.00</div>
+          </article>
+        </div>
+
+        <!-- Tabla SEO y accesible -->
+        <div class="table-wrap">
+          <h2 class="sr-only">Tabla de productos</h2>
+          <table class="table product-table" summary="Lista de productos con descripción y precio">
+            <caption>Tabla de productos de Pinturas Arizona (precios referenciales)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Familia</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-type="interior">
+                <td>Pintura Interior</td>
+                <td>Acabado mate para paredes, antimancha. 4L.</td>
+                <td>Interior</td>
+                <td class="price">$25.00</td>
+              </tr>
+              <tr data-type="exterior">
+                <td>Pintura Exterior</td>
+                <td>Resistente a UV y lluvia. 4L.</td>
+                <td>Exterior</td>
+                <td class="price">$30.00</td>
+              </tr>
+              <tr data-type="esmalte">
+                <td>Esmaltes y Barnices</td>
+                <td>Acabados para madera y metal. 1L.</td>
+                <td>Esmaltes</td>
+                <td class="price">$18.00</td>
+              </tr>
+              <tr data-type="exterior">
+                <td>Revestimiento Texturado</td>
+                <td>Acabado arquitectónico para fachadas. 10L.</td>
+                <td>Exterior</td>
+                <td class="price">$65.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted mt-12">Los precios son referenciales. Para cotizaciones, fichas técnicas y muestras contacte a <a href="mailto:info@pinturasarizona.com">info@pinturasarizona.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 Pinturas Arizona</div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

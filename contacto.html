@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto — Pinturas Arizona</title>
+    <meta name="description" content="Contacto y solicitudes de muestra." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header small">
+      <div class="container header-grid">
+        <a class="brand" href="index.html">
+          <div class="logo-glow small" aria-hidden="true"></div>
+          <div class="brand-text"><strong>Pinturas Arizona</strong></div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container contact-page">
+      <section class="contact-panel">
+        <h1>Contacto</h1>
+        <p class="lead">
+          Cuéntanos tu proyecto y te enviaremos una propuesta y una muestra.
+        </p>
+
+        <form id="contact-form" class="form">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Mensaje / detalles</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              Enviar solicitud
+            </button>
+            <button class="btn btn-ghost" type="reset">Limpiar</button>
+          </div>
+        </form>
+
+        <div
+          id="form-result"
+          class="form-result"
+          aria-live="polite"
+          hidden
+        ></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        info@pinturasarizona.com — © 2026 Pinturas Arizona
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const result = document.getElementById("form-result");
+          result.hidden = false;
+          result.textContent =
+            "Gracias — tu solicitud fue recibida. Responderemos pronto.";
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
